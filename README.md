@@ -2,7 +2,7 @@
 
 Determine the bounding box of a rotated rectangle
 
-![Bounding Box](spiderstrategies.github.io/node-bounding-box/bb.png)
+![Bounding Box](http://spiderstrategies.github.io/node-bounding-box/bb.png)
 
 # example
 
