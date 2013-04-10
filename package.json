@@ -1,0 +1,19 @@
+{
+  "name": "bounding-box",
+  "version": "0.0.1",
+  "description": "Determines the bounding box of some object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpiderStrategies/node-bounding-box"
+  },
+  "keywords": [
+    "bounding-box",
+    "bounds"
+  ],
+  "author": "Nathan Bowser <nathan.bowser@spiderstrategies.com>",
+  "license": "BSD"
+}
