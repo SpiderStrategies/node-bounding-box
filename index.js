@@ -1,4 +1,3 @@
-
 /*
  * Transforms point to a new location based on the center coordinate and the angle.
  *
@@ -37,6 +36,7 @@ module.exports = function (area, angle) {
     area.right = area.left + area.width
     return area
   }
+
   var center = {
     x: area.left + area.width / 2,
     y: area.top + area.height / 2
