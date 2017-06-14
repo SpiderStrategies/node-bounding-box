@@ -6,12 +6,27 @@ Determine the bounding box of a rotated rectangle
 
 # example
 
-```
+```javascript
 var bb = require('bounding-box')
 
 var obj = {left: 221, top: 211, height: 220, width: 586}
 
 console.log(bb(obj, 45))
+
+```
+
+## With custom center point
+
+```javascript
+var bb = require('bounding-box')
+
+var obj = {left: 221, top: 211, height: 220, width: 586}
+
+// Rotate from top/left corner (origin 0 0)
+console.log(bb(obj, 45, {
+  x: 221,
+  y: 211
+}))
 
 ```
 
