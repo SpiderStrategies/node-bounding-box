@@ -22,7 +22,7 @@ function transform (point, center, angle) {
  * Determines the bounding box of the area, if it's rotated at the specified angle
  * The area must define left, top, height, and width properties
  */
-module.exports = function (area, angle) {
+module.exports = function (area, angle, center) {
   var props = ['width', 'height', 'top', 'left']
   props.forEach(function (prop) {
     if (!area.hasOwnProperty(prop)) {
@@ -37,9 +37,12 @@ module.exports = function (area, angle) {
     return area
   }
 
-  var center = {
-    x: area.left + area.width / 2,
-    y: area.top + area.height / 2
+  // Allow custom center 
+  if (typeof center === 'undefined') {
+  	center = {
+	    x: area.left + area.width / 2,
+	    y: area.top + area.height / 2
+	  }
   }
 
   // Deteremines each of the corners based on the transformation angle

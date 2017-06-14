@@ -23,6 +23,18 @@ assert.deepEqual(bb(obj, 90), {
   width: 220
 })
 
+assert.deepEqual(bb(obj, 90, {
+  x: 221,
+  y: 211
+}), {
+  bottom: 797,
+  height: 586,
+  left: 1,
+  right: 221.00000000000003,
+  top: 211,
+  width: 220.00000000000003
+})
+
 assert.deepEqual(bb(obj, 90), {
   bottom: 614,
   height: 586,
