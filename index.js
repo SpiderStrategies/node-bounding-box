@@ -30,8 +30,8 @@ module.exports = function (area, angle, center) {
     }
   })
 
-  // If we don't have an angle, or it's 0 or 180, just return the area, with the addition of bottom and right properties
-  if (!angle || angle === 180) {
+  // If we don't have an angle, or it's 0, just return the area, with the addition of bottom and right properties
+  if (!angle) {
     area.bottom = area.top + area.height
     area.right = area.left + area.width
     return area
