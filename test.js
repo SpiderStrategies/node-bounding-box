@@ -57,4 +57,24 @@ describe('bb function', () => {
       bb({ width: 10, height: 10 })
     }, /missing/)
   })
+
+  test('180 degree rotation with custom center', () => {
+    const testArea = {
+      left: -0.5000000000001165,
+      top: -0.5,
+      width: 150,
+      height: 285.5
+    }
+    const center = { x: 75, y: 45 }
+
+    const result = bb(testArea, 180, center)
+    assert.deepEqual(result, {
+      top: -195,
+      bottom: 90.5,
+      height: 285.5,
+      left: 0.5000000000000853,
+      right: 150.5000000000001,
+      width: 150.00000000000003
+    })
+  })
 })
